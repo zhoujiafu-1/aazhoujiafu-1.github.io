@@ -1,0 +1,244 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+html{height: 100%;}
+#header{
+	position: absolute;
+	left: 200px;
+	font-family: "黑体";
+	z-index: 999999;
+	color:#A8EDEA
+}
+#header2{
+	position: absolute;
+	right: 300px;
+	font-family: "黑体";
+	z-index: 999999;
+	color:#A8EDEA
+}
+
+#viewDiv1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 48.5%;
+	border: 10px solid lightgray;
+	border-radius: 15px;
+	border-image:linear-gradient(#a8edea) 1 10;
+	background-color: #FFFFFF;
+	box-shadow: darkgrey 5px 5px 20px 3px ;
+}
+
+#viewDiv {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 48.5%;
+    border: 10px solid lightgray;
+	border-radius: 15px;
+	border-image:linear-gradient(#a8edea) 1 10;
+	background-color: #FFFFFF;
+	box-shadow: darkgrey 5px 5px 20px 3px ;
+
+}
+
+#LayerBox{
+    position: absolute;
+    top: 630px;
+    right: 50px;
+    font-family: "微软雅黑";
+	min-height: 1px;
+	
+	
+}
+.dropdown {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300
+}
+/* 下拉内容（默认隐藏） */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 1px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-a {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* 设置下拉按钮的样式 */
+
+
+.dropbtn{
+  padding: 16px;
+  font-size: 16px;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  border-radius: 10px;
+  width: 155px;
+}
+
+.dropbtn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropdown-content-a {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #A8EDEA
+  }
+/*    display: inline-block;*/
+/*}*/
+
+.button_Add{
+    margin-left: 5px;
+    float: left;
+    background-color: white;
+    border: 1px solid lightgreen;
+    color: lightgreen;
+    border-radius:5px ;
+    opacity: 0.8;
+}
+
+.button_Remove{
+    margin-left: 5px;
+    float: left;
+    position:initial;
+    background-color: white;
+    border: 1px solid red;
+    color: red;
+    border-radius:5px ;
+    opacity: 0.8;
+}
+
+.SingleBox{
+
+    margin-top: 10px;
+    margin-left: 10px;
+}
+}
+
+#Layers{
+    /*float:left;*/
+    margin-left: 20px;
+    color: dimgray;
+}
+
+#BaseMap_div{	
+	scrollbar-color: #6969dd #e0e0e0;
+	scrollbar-width: thin;
+    position:absolute;
+    top: 630px;
+    right: 210px;
+    border: 5px;
+    border-color: black;
+    border-radius: 10%;
+	min-height: 0px;
+}
+
+#coor_scale{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.section {
+  max-height: 250px;
+  padding: 1rem;
+  overflow-y: auto;
+  direction: ltr;
+  scrollbar-color: #d4aa70 #e4e4e4;
+  scrollbar-width: thin;
+  } 
+  #overviewDiv {
+  	position: absolute;
+  	top: 50px;
+  	left: 60px;
+  	width: 200px;
+  	height: 200px;
+  	border: 1px solid black;
+  	overflow: hidden;
+  }
+  
+  #extentDiv {
+  	background-color: rgba(0, 0, 0, 0.5);
+  	position: absolute;
+	width: 30px;
+	height: 30px;
+  }
+  #info {
+      background-color: black;
+      opacity: 0.75;
+      color: orange;
+      font-size: 18pt;
+      padding: 8px;
+      visibility: hidden;
+	  
+	  
+ }
+ #infoDiv {
+  background-color: white;
+  padding: 10px;
+  width: 260px;
+  margin: 5px;
+  position: absolute;
+  bottom: 15px;
+  right: 500px;
+  font-size: 14px;
+	
+ }
+ 
+ .geometry-options {
+   display: flex;
+   flex-direction: row;
+ }
+ 
+ .geometry-button,
+ .layer-button {
+   flex: 1;
+   border-style: solid;
+   border-width: 1px;
+   border-image: none;
+ }
+ 
+ .geometry-button-selected {
+   background: #4c4c4c;
+   color: #fff;
+ }
+ 
+ .options {
+   max-width: 260px;
+   width: 100%;
+   height: 25px;
+ }
+ 
+ #distanceNum {
+   width: 100%;
+   height: 60px;
+ }
+  
+

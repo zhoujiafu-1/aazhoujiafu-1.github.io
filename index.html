@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>webmap demo</title>
+
+   
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.19/esri/themes/light/main.css">
+    <link rel="stylesheet" href="css/webmap.css">
+    <script src="https://js.arcgis.com/4.19/"></script>
+    <script src="js/index1.js"></script>
+	<script type="module"  src="https://js.arcgis.com/calcite-components/1.0.0-beta.79/calcite.esm.js"></script>
+	<script nomodule="" src="https://js.arcgis.com/calcite-components/1.0.0-beta.79/calcite.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.0.0-beta.79/calcite.css" />
+	<link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css" />
+	 <script src="https://js.arcgis.com/4.19/"></script>
+	 
+   
+
+
+
+</head>
+<body>
+	<div id="header" style="background-color:null;">
+		<h1 style="margin-bottom:0;">大西洋2000年飓风查询</h1>
+	</div>
+	<div id="header2" style="background-color:null;">
+		<h1 style="margin-bottom:0;">地震影响范围</h1>
+	</div>
+
+	
+    <div id="viewDiv1"></div>
+    <div id="viewDiv"></div>
+	<div id="info">
+	    <span id="name"></span>
+	    <br>
+	    <span id="catalogy"></span>
+	    <br>
+	    <span id="location"></span>
+	</div>
+<!--    加入图层-->
+    <div id="LayerBox">
+		<div class="dropdown">
+		<button class="dropbtn">添加图层</button>
+        <div class="dropdown-content">
+			<div class="section">
+            <div class="SingleBox">
+                <p>Hurricanes</p>
+				<img src="img/line.png" alt="Line feature Layer" title="Line feature Layer"
+				     height="105px" width="116px">
+                <br/>              
+				<input type="button" id="Add_layer2" class="button_Add" value="Add">
+				<input type="button" id="Remove_layer2" class="button_Remove" value="Remove">	 
+            </div>
+            <div class="SingleBox">
+                <p>USA</p>
+                <img src="img/polyline.png" alt="Polyline feature Layer"
+                     title="Polyline feature Layer" height="105px" width="116px">
+				<br/>
+				<input type="button" id="Add_layer3" class="button_Add" value="Add">
+				<input type="button" id="Remove_layer3" class="button_Remove" value="Remove">
+            </div>
+			</div>
+          </div>
+
+        <div id="Layers">
+        </div>
+       </div>
+      </div>
+<!--切换底图-->
+    <div id="BaseMap_div">
+		<div class="dropdown">
+        <button class="dropbtn">添加底图</button>
+           <div class="dropdown-content">
+			   <div class="section">
+			   
+			   
+            <input type="radio" id="gray" name="basemap" checked><img src="./IMG/gray.png" alt="gray"
+                                                                      height="105px" width="116px" title="gray">
+            <br />
+            <input type="radio" id="hybrid" name="basemap"><img src="./IMG/hybrid.jpg" alt="hybrid"
+                                                                height="105px" width="116px" title="hybrid">
+            <br />
+            <input type="radio" id="terrain" name="basemap"><img src="./IMG/terrin.png" alt="terrain"
+                                                                 height="105px" width="116px" title="terrain">
+            <br />
+            <input type="radio" id="osm" name="basemap"><img src="./IMG/osm.jpg" alt="osm"
+                                                             height="105px" width="116px" title="osm">
+            <br />
+            <input type="radio" id="streets" name="basemap"><img src="./IMG/streets.png" alt="streets"
+                                                                 height="105px" width="116px" title="streets">
+            <br />
+            </div>
+		</div>
+
+    </div>
+	</div>	
+	</div>
+<!--    经纬度坐标 比例尺-->
+    <span id="coor_scale">
+        <div id="coordinateDisplay"></div>
+        <div id="scaleDisplay"></div>
+    </span> 
+	<div id="overviewDiv">
+	<div id="extentDiv"></div>
+</body>
+</html>
